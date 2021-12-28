@@ -10,11 +10,11 @@ const fontSlice = createSlice({
   name: 'fonts',
   initialState,
   reducers: {
-    fontAdded(state, action) {
-      state.push(action.payload)
-    },
+    // fontAdded(state, action) {
+    //   state.push(action.payload)
+    // },
     select(state, action) {
-      const { id, abbr, color, label, isActive } = action.payload
+      const { id } = action.payload
 
       state.forEach(font => {if(font.id !== id) font.isActive = false})
       const selectedFont = state.find(font => font.id === id)

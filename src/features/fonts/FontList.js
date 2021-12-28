@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fontAdded, select } from './fontSlice';
+import { select } from './fontSlice';
 
 export function FontList() {
   const fontList = useSelector(state => state.fonts)
