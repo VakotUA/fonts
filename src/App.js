@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
+
+import Navbar from './Navbar.js';
+
+import { FontList } from './features/fonts/FontList.js';
+import { BuyNewFonts } from './features/fonts/BuyNewFonts.js';
+
 import './App.css';
+import './Font.css';
+import './Navbar.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <div className="App">
+        <Switch>
+          <Route exact path="/fonts/myfonts" render={() => (
+            <React.Fragment>
+              <FontList />
+            </React.Fragment>
+            )}
+          />
+          <Route exact path="/fonts/buynewfonts" component={BuyNewFonts}/>
+          <Redirect to="/fonts/myfonts"/>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
