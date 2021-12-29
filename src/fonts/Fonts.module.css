@@ -2,19 +2,17 @@
 	transition: all .3s;
 	margin: 0;
 	padding: 0;
-
 }
 
-.font-list {
+.list {
 	width: 100%;
 	display: flex;
-	/*flex-direction: column;*/
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 }
 
-.font-block {
+.block {
 	width: 400px;
 	height: 150px;
 	border: 2px solid white;
@@ -27,10 +25,9 @@
 	opacity: 1;
 }
 
-.font-color-block {
+.color {
 	min-width: 140px;
 	min-height: 140px;
-	background-color: limegreen;
 	border-radius: 10px;
 	line-height: 140px;
 	font-size: 40px;
@@ -39,11 +36,20 @@
 	margin-right: 10px;
 }
 
-.font-block.active {
+.active {
 	opacity: .5;
 }
 
-.font-block:hover {
+.block:hover {
 	padding: 20px;
 	opacity: 1;
+}
+
+.colorBlindLabel {
+	opacity: 0;
+	min-width: 140px;
+	min-height: 140px;
+	margin-left: 4px;
+	pointer-events: none;
+	position: absolute;
 }

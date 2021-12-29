@@ -1,9 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = [
-  { id: '112', abbr: "M", color: "#00A653", label: "Merriweather project is led by Sorkin Type", isActive: false },
-  { id: '113', abbr: "R", color: "#FE7FC3", label: "Roboto doesn't compromise, allowing letters", isActive: true },
-  { id: '114', abbr: "NS", color: "#046DFF", label: "Noto Sans covers over 30 scripts", isActive: false }
+  { id: '112', abbr: "M", color: "#00A653", colorBlindLabel: "green", label: "Merriweather project is led by Sorkin Type", isActive: false },
+  { id: '113', abbr: "R", color: "#FE7FC3", colorBlindLabel: "pink", label: "Roboto doesn't compromise, allowing letters", isActive: true },
+  { id: '114', abbr: "NS", color: "#046DFF", colorBlindLabel: "blue", label: "Noto Sans covers over 30 scripts", isActive: false }
 ]
 
 const fontSlice = createSlice({

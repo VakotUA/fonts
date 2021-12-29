@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit'
-import fontReducer from '../features/fonts/fontSlice'
+import fontReducer from '../fonts/fontSlice'
 
 export default configureStore({
   reducer: {

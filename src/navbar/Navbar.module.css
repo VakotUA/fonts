@@ -13,46 +13,50 @@
 	padding: 0 25px;
 }
 
-.navbar h1 {
+.header {
 	font-weight: 400;
 }
 
-.navbar div {
+.btns {
 	display: inline-flex;
 }
 
-.navbar .btn {
+.btn {
 	text-decoration: none;
 	text-align: center;
-	color: white;
 	position: relative;
+
+	color: white;
 }
 
-.navbar .btn:first-child {
+.active {
+	color: orange;
+}
+
+.btn:first-child {
 	margin-right: 1em;
 }
 
-.navbar .btn::after {
+.btn::after {
 	content: "";
 	width: 0px;
 	height: 2px;
+
 	background-color: white;
+
 	position: absolute;
 	left: 50%;
 	bottom: -30%;
+
 	transform: translate(-50%);
 	transition: width .3s ease-in-out;
 }
 
-.navbar .btn:hover::after, .navbar .btn.active:hover::after {
-	width: 100%;
-}
-
-.navbar .btn.active {
-	color: orange;
-}
-
-.navbar .btn.active::after {
+.active::after {
 	background-color: orange;
 	width: 25%;
+}
+
+.btn:hover::after {
+	width: 100%;
 }
