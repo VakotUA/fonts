@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/fonts/static/css/main.54cf306b.css",
-    "main.js": "/fonts/static/js/main.81769bd5.js",
+    "main.css": "/fonts/static/css/main.a12b42a4.css",
+    "main.js": "/fonts/static/js/main.5cc62876.js",
     "index.html": "/fonts/index.html",
-    "main.54cf306b.css.map": "/fonts/static/css/main.54cf306b.css.map",
-    "main.81769bd5.js.map": "/fonts/static/js/main.81769bd5.js.map"
+    "main.a12b42a4.css.map": "/fonts/static/css/main.a12b42a4.css.map",
+    "main.5cc62876.js.map": "/fonts/static/js/main.5cc62876.js.map"
   },
   "entrypoints": [
-    "static/css/main.54cf306b.css",
-    "static/js/main.81769bd5.js"
+    "static/css/main.a12b42a4.css",
+    "static/js/main.5cc62876.js"
   ]
 }
