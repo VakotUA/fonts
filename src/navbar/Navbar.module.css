@@ -41,15 +41,16 @@
 	content: "";
 	width: 0px;
 	height: 2px;
+
 	background-color: white;
+
 	position: absolute;
 	left: 50%;
 	bottom: -30%;
+
 	transform: translate(-50%);
 	transition: width .3s ease-in-out;
 }
-
-
 
 .active::after {
 	background-color: orange;

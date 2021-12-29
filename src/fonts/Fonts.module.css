@@ -44,3 +44,12 @@
 	padding: 20px;
 	opacity: 1;
 }
+
+.colorBlindLabel {
+	opacity: 0;
+	min-width: 140px;
+	min-height: 140px;
+	margin-left: 4px;
+	pointer-events: none;
+	position: absolute;
+}

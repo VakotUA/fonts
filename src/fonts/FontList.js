@@ -14,6 +14,8 @@ export function FontList() {
         className={[styles.block,  item.isActive ? styles.active : ""].join(" ")} 
         onClick={() => dispatch(select({id: item.id}))}>
 
+          <p className={styles.colorBlindLabel}>{item.colorBlindLabel}</p>
+
           <span 
           className={styles.color} 
           style={{backgroundColor: item.color}}>
