@@ -2,18 +2,18 @@ import React from 'react';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { select } from './fontSlice';
-// import { createSelector } from 'reselect';
+import { createSelector } from 'reselect';
 
 import styles from './Fonts.module.css';
 import classNames from 'classnames';
 
-// const fontListSelector = createSelector((state) => state.fonts)
-// state.fonts = undefined
+const fontListSelector = createSelector(
+  (state) => state.fonts,
+  (fonts) => fonts
+)
 
 export function FontList() {
-  // const fontList = useSelector(fontListSelector)
-
-  const fontList = useSelector((state) => state.fonts)
+  const fontList = useSelector(fontListSelector)
   const dispatch = useDispatch()
 
   return (
