@@ -10,9 +10,9 @@ const fontSlice = createSlice({
   name: 'fonts',
   initialState,
   reducers: {
-    // fontAdded(state, action) {
-    //   state.push(action.payload)
-    // },
+    fontAdded(state, action) {
+      state.push(action.payload)
+    },
     select(state, action) {
       const { id } = action.payload
 
