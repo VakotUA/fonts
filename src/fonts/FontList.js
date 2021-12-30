@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { useSelector, useDispatch, shallowEqual } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { select } from './fontSlice';
-import { createSelector } from 'reselect';
+// import { createSelector } from 'reselect';
 
 import styles from './Fonts.module.css';
 import classNames from 'classnames';
@@ -25,11 +25,7 @@ export function FontList() {
 
           <p className={styles.colorBlindLabel}>{item.colorBlindLabel}</p>
 
-          <span 
-          className={styles.color} 
-          style={{backgroundColor: item.color}}>
-            {item.abbr}
-          </span>
+          <span className={styles.color} style={{backgroundColor: item.color}}>{item.abbr}</span>
 
           <p>{item.label}</p>
         </li>
